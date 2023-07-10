@@ -1,0 +1,437 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #F9E7E7;
+  --sub-color: #2E266E;
+  --regular-color: #EE5252;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: var(--main-color);
+}
+
+header .container {
+  padding: 1vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navbar-container {
+  display: flex;
+}
+header .container .navbar-container .menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin-right: 40px;
+}
+header .container .navbar-container .menu-container .menu-list {
+  margin-left: 30px;
+}
+header .container .navbar-container .menu-container .menu-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+header .container .navbar-container .contact a {
+  background: var(--regular-color);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #F9E7E7;
+  font-size: 14px;
+  text-decoration: none;
+}
+header .container .navbar-container .close {
+  display: none;
+}
+header .container .toggle {
+  display: none;
+}
+
+main #hero .container {
+  padding: 2vw 5vw;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: space-between;
+  align-items: center;
+}
+main #hero .container .heroText span {
+  color: var(--regular-color);
+  font-weight: bold;
+}
+main #hero .container .heroText h1 {
+  color: #2E266E;
+  font-family: Montserrat;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 5px;
+}
+main #hero .container .heroText p {
+  margin-top: 10px;
+  display: flex;
+  width: 502px;
+  flex-direction: column;
+  color: rgba(30, 30, 30, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+main #hero .container .heroText button {
+  margin-top: 20px;
+  padding: 13px 25px;
+  background: var(--regular-color);
+  color: white;
+  font-size: 15px;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+}
+main #hero .container .heroImage {
+  width: 100%;
+}
+main #hero .container .heroImage img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .sub-showcase {
+  width: 100%;
+  height: 150px;
+  background: var(--regular-color);
+  margin-top: 2rem;
+}
+main .sub-showcase .container {
+  padding: 2vw 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .sub-showcase .container a {
+  color: white;
+  text-decoration: none;
+}
+main .sub-showcase .container a .sub-food {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .sub-showcase .container a .sub-food .image img {
+  width: 100%;
+}
+main .sub-showcase .container a .sub-food .text {
+  text-transform: capitalize;
+  font-size: 14px;
+}
+main .sub-showcase .container a .sub-food .text h2 {
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+main #about {
+  margin-top: 5rem;
+}
+main #about .container {
+  padding: 2vw 5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  align-items: center;
+  gap: 50px;
+}
+main #about .container .about-image img {
+  width: 90%;
+}
+main #about .container .about-content span {
+  color: var(--regular-color);
+  font-weight: bold;
+}
+main #about .container .about-content h1 {
+  color: var(--sub-color);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 80%;
+  margin-top: 5px;
+}
+main #about .container .about-content p {
+  color: rgba(30, 30, 30, 0.87);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161.4%;
+  margin-top: 2rem;
+  width: 80%;
+}
+main #about .container .about-content a button {
+  margin-top: 2rem;
+  display: inline-flex;
+  padding: 13px 28px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #EE5252;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+main #services {
+  margin-top: 5rem;
+}
+main #services .container {
+  padding: 2vw 5vw;
+}
+main #services .container .top {
+  display: flex;
+  justify-content: space-between;
+}
+main #services .container .top h1 {
+  color: #2E266E;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main #services .container .top p {
+  display: flex;
+  width: 480px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: rgba(30, 30, 30, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161.4%;
+}
+main #services .container .services-content {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main #services .container .services-content .service .image {
+  width: 100px;
+  height: 72px;
+  flex-shrink: 0;
+  background: #EE5252;
+}
+main #services .container .services-content .service .service-text {
+  margin-top: 1rem;
+}
+main #services .container .services-content .service .service-text h2 {
+  color: #2E266E;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+main #services .container .services-content .service .service-text p {
+  display: flex;
+  width: 256px;
+  flex-direction: column;
+  color: rgba(30, 30, 30, 0.76);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161.4%;
+  margin-top: 10px;
+}
+main #offer {
+  margin-top: 5rem;
+}
+main #offer .container {
+  padding: 2vw 5vw;
+  position: relative;
+}
+main #offer .container .offerImage {
+  width: 90%;
+  height: 500px;
+  background-image: url("../images/Rectangle 13 (1).png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  position: relative;
+}
+main #offer .container .offer-content {
+  position: absolute;
+  top: 5rem;
+  background: white;
+  width: 400px;
+  padding: 2rem;
+}
+main #offer .container .offer-content span {
+  color: #EE5252;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+main #offer .container .offer-content h3 {
+  color: #2E266E;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 1rem;
+}
+main #offer .container .offer-content p {
+  color: rgba(30, 30, 30, 0.87);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 161.4%;
+  margin-top: 1rem;
+}
+main #offer .container .offer-content a button {
+  margin-top: 2rem;
+  display: inline-flex;
+  padding: 13px 28px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #EE5252;
+  border: 0;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  header .container {
+    padding: 1vw 3vw;
+  }
+  header .container .navbar-container {
+    position: absolute;
+    display: block;
+    background: #EE5252;
+    left: -100%;
+    width: 100%;
+    top: 0rem;
+    padding-bottom: 1rem;
+  }
+  header .container .navbar-container .menu-container {
+    display: block;
+  }
+  header .container .navbar-container .menu-container .menu-list {
+    margin-top: 2rem;
+  }
+  header .container .navbar-container .menu-container .menu-list a {
+    color: white;
+  }
+  header .container .navbar-container .contact {
+    margin-top: 2rem;
+    margin-left: 0.6rem;
+  }
+  header .container .navbar-container .close {
+    position: absolute;
+    color: white;
+    right: 1rem;
+    top: 1rem;
+    display: block;
+  }
+  header .container .toggle {
+    display: block;
+    font-size: 20px;
+  }
+  main #hero {
+    margin-top: 2rem;
+  }
+  main #hero .container {
+    padding: 2vw 5vw;
+    display: block;
+  }
+  main #hero .container .heroText h1 {
+    font-size: 45px;
+  }
+  main #hero .container .heroText p {
+    width: 100%;
+  }
+  main #hero .container .heroText button {
+    display: none;
+  }
+  main #hero .container .heroImage {
+    margin-top: 3rem;
+  }
+  main #hero .container .heroImage img {
+    width: 100%;
+  }
+  main #about .container {
+    display: block;
+  }
+  main #about .container .about-image img {
+    width: 100%;
+  }
+  main #about .container .about-content {
+    margin-top: 2rem;
+  }
+  main #about .container .about-content h1 {
+    width: 100%;
+  }
+  main #about .container .about-content p {
+    width: 100%;
+  }
+  main #services .container .top {
+    display: block;
+  }
+  main #services .container .top p {
+    width: 100%;
+    margin-top: 10px;
+  }
+  main #services .container .services-content {
+    display: block;
+  }
+  main #services .container .services-content .service {
+    margin-top: 2rem;
+  }
+  main #services .container .services-content .service .service-text p {
+    width: 100%;
+    margin-top: 2px;
+  }
+  .sub-showcase .container a:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  header .container {
+    padding: 2vw 5vw;
+  }
+  main #hero .container {
+    padding: 2vw 5vw;
+  }
+  main .sub-showcase .container a {
+    padding-top: 1rem;
+  }
+  main .sub-showcase .container a br {
+    display: none;
+  }
+  main .sub-showcase .container a:nth-child(2) {
+    display: none;
+  }
+  main #offer .container {
+    padding: 0;
+  }
+  main #offer .container .offerImage {
+    width: 100%;
+    height: 500px;
+  }
+  main #offer .container .offer-content {
+    top: 2rem;
+    width: 77vw;
+    left: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
