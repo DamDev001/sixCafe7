@@ -678,6 +678,12 @@ main {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
+
+                img{
+                    width: 100%;
+                    height: 500px;
+                    object-fit: cover;
+                }
             }
 
             .contact {

@@ -32,11 +32,13 @@ header .container .navbar-container .menu-container {
 }
 header .container .navbar-container .menu-container .menu-list {
   margin-left: 30px;
+  cursor: pointer;
 }
 header .container .navbar-container .menu-container .menu-list a {
   text-decoration: none;
   color: black;
   font-size: 14px;
+  cursor: pointer;
 }
 header .container .navbar-container .contact a {
   background: var(--regular-color);
@@ -553,6 +555,12 @@ main #contact .container .contact-image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+main #contact .container .contact-image img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main #contact .container .contact {
   padding: 2rem;
