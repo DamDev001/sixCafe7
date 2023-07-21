@@ -19,6 +19,33 @@
 
 <body>
 
+    <div class="popUp-menu">
+        <div class="popup-shop">
+            <div class="top">
+                <div class="summary-order">
+                    <span>Order Summary</span>
+                </div>
+                <div class="close-popup">X</div>
+            </div>
+            <div class="center">
+                <div class="foodImage-order">
+                    <img src="" alt="">
+                </div>
+
+                <div class="foodOrderDetails">
+                    <h2 class="foodOrderName"></h2>
+                    <p class="orderDetail"></p>
+                    <p><span class="price"></span></p>
+
+                    <div class="pay">
+                        <button></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
             <div class="logo">
@@ -199,7 +226,7 @@
                     <h1>Our <br> Best Menu</h1>
 
                     <div class="menu-food">
-                        <li><a class="menu-link active-list" onclick="openMenu('lunch')">Lunch</a></li>
+                        <li><a class="menu-link active-list" onclick="openMenu('lunch')">All Six7</a></li>
                         <li><a class="menu-link" onclick="openMenu('dinner')">Dinner</a></li>
                         <li><a class="menu-link" onclick="openMenu('break-fast')">Breakfast</a></li>
                         <li><a class="menu-link" onclick="openMenu('nonVeg')">None-Veg</a></li>
@@ -207,88 +234,8 @@
                 </div>
 
                 <div class="menu-content active-menu" id="lunch">
-                    <div class="food">
-                        <div class="img-food"></div>
-                        <div class="image-content-details">
-                            <h4>Six7 Fried-Rice</h4>
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦6000</div>
-                        </div>
-                    </div>
-
-                    <div class="food">
-                        <div class="img-food"></div>
-                        <div class="image-content-details">
-                            <h4>Six7 Party Jollof</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦3000</div>
-                        </div>
-                    </div>
-
-                    <div class="food">
-                        <div class="img-food"></div>
-                        <div class="image-content-details">
-                            <h4>Six7 Spaghetti</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦2000</div>
-                        </div>
-                    </div>
-
-                    <div class="food">
-                        <div class="img-food"></div>
-                        <div class="image-content-details">
-                            <h4>Basmati Jollof</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦2000</div>
-                        </div>
-                    </div>
-
-                    <div class="food">
-                        <div class="img-food">
-                            <div class="img-food">
-                                <img src="./asset/images/menu-images/acddc32e-8120-4487-bba8-8a8dd27ed65d.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="image-content-details">
-                            <h4>Six7 Special Jollof(combo)</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦3000</div>
-                        </div>
-                    </div>
-
-                    <div class="food">
-                        <div class="img-food">
-                            <img src="./asset/images/menu-images/IMG_6955.PNG" alt="">
-                        </div>
-                        <div class="image-content-details">
-                            <h4>Six7 Spaghetti</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦2000</div>
-                        </div>
-                    </div>
-                    <div class="food">
-                        <div class="img-food">
-                            <img src="./asset/images/menu-images/c1681859-001c-4831-98a8-caa081310903.jpg" alt="">
-                        </div>
-                        <div class="image-content-details">
-                            <h4>Six7 Special</h4>
-                            
-                        </div>
-                        <div class="price-time">
-                            <div class="price">₦1500</div>
-                        </div>
-                    </div>
+                    
+                    
                 </div>
 
                 <div class="menu-content" id="dinner">
@@ -609,6 +556,10 @@
         </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="./asset/js/main.js"></script>
 </body>
 

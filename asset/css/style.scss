@@ -12,6 +12,86 @@
 body {
     font-family: 'Montserrat', sans-serif;
     background: var(--main-color);
+    overflow-x: hidden;
+}
+
+.popUp-menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(252, 122, 122, 0.281);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 999;
+    overflow-y: auto;
+
+    .popup-shop {
+        width: 50rem;
+        height: 400px;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .summary-order {
+                span {
+                    font-weight: 900;
+                }
+            }
+
+            .close-popup {
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+
+        .center {
+            margin-top: 1rem;
+            display: flex;
+
+            .foodImage-order {
+                width: 300px;
+                height: 350px;
+
+                img {
+                    width: 300px;
+                    border-radius: 10px;
+                    height: 350px;
+                    object-fit: cover;
+                }
+            }
+
+            .foodOrderDetails {
+                margin-left: 1rem;
+
+                p {
+                    margin-top: 1rem;
+                }
+
+                .price {
+                    font-weight: 900;
+                }
+
+                .pay {
+                    margin-top: 2rem;
+
+                    button {
+                        padding: 10px;
+                        border-radius: 4px;
+                        border: 0;
+                        background: var(--regular-color);
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
 }
 
 header {
@@ -58,11 +138,13 @@ header {
 
             .close {
                 display: none;
+                cursor: pointer;
             }
         }
 
         .toggle {
             display: none;
+            cursor: pointer;
         }
     }
 
@@ -276,6 +358,7 @@ main {
 
                 .service {
                     margin-top: 1rem;
+
                     .image {
                         width: 100px;
                         height: 72px;
@@ -310,7 +393,7 @@ main {
                         }
                     }
 
-                    &:nth-child(2){
+                    &:nth-child(2) {
                         .image {
                             width: 100px;
                             height: 72px;
@@ -322,7 +405,7 @@ main {
                         }
                     }
 
-                    &:nth-child(3){
+                    &:nth-child(3) {
                         .image {
                             width: 100px;
                             height: 72px;
@@ -334,7 +417,7 @@ main {
                         }
                     }
 
-                    &:nth-child(4){
+                    &:nth-child(4) {
                         .image {
                             width: 100px;
                             height: 72px;
@@ -482,7 +565,7 @@ main {
                 grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                 display: none;
 
-                a{
+                a {
                     text-decoration: none;
                 }
 
@@ -490,21 +573,16 @@ main {
                     margin: 10px;
                     background: white;
                     cursor: pointer;
-
-                    &:hover{
-                        margin-top: -5px;
-                        transition: 0.4s;
-                    }
+                    border-radius: 10px;
 
                     .img-food {
                         width: 100%;
                         height: 200px;
-                        background: url("../images/menu-images/584c38f9-1712-4840-b86c-2bd2091bc78a.jpg");
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
 
-                        img{
+                        img {
                             width: 100%;
                             height: 200px;
                             object-fit: cover;
@@ -512,7 +590,7 @@ main {
                     }
 
                     .image-content-details {
-                        padding: 20px;
+                        padding: 10px 20px;
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
@@ -523,25 +601,6 @@ main {
                             font-style: normal;
                             font-weight: 700;
                             line-height: normal;
-                        }
-
-                        .quatity {
-                            display: flex;
-
-                            .decrease-quatity,
-                            .quatity-figure,
-                            .increase-quatity {
-                                padding: 10px 13px;
-                                background: rgb(228, 227, 227);
-                                font-size: 18px;
-                                cursor: pointer;
-                            }
-
-                            .quatity-figure {
-                                color: white;
-                                background: var(--regular-color);
-                                cursor: none;
-                            }
                         }
 
                     }
@@ -556,22 +615,19 @@ main {
                         }
                     }
 
-                    
-                }
-
-                .food:nth-child(2){
-                    .img-food{
-                        width: 100%;
-                        height: 200px;
-                        background: url("../images/menu-images/60636885-1bc5-45c0-b03e-426d097eacdd.jpg");
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
+                    button {
+                        margin-left: 20px;
+                        font-size: 16px;
+                        border: 0;
+                        background: transparent;
+                        color: var(--regular-color);
+                        margin-bottom: 20px;
                     }
                 }
 
-                .food:nth-child(3){
-                    .img-food{
+
+                .food:nth-child(3) {
+                    .img-food {
                         width: 100%;
                         height: 200px;
                         background: url("../images/menu-images/37898bab-c4f5-4a31-8fda-c1e26dcb4f26.jpg");
@@ -581,8 +637,8 @@ main {
                     }
                 }
 
-                .food:nth-child(4){
-                    .img-food{
+                .food:nth-child(4) {
+                    .img-food {
                         width: 100%;
                         height: 200px;
                         background: url("../images/menu-images/ee7b74a8-11cb-433a-9d7c-a03105ddfbc2.jpg");
@@ -593,7 +649,7 @@ main {
                 }
             }
 
-            .active-menu{
+            .active-menu {
                 display: grid;
             }
         }
@@ -679,7 +735,7 @@ main {
                 background-repeat: no-repeat;
                 background-size: contain;
 
-                img{
+                img {
                     width: 100%;
                     height: 500px;
                     object-fit: cover;
@@ -740,8 +796,8 @@ footer {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         align-items: center;
 
-        .right{
-            .menu-container{
+        .right {
+            .menu-container {
                 display: flex;
                 align-items: center;
 
@@ -751,6 +807,31 @@ footer {
 }
 
 @media(max-width: 800px) {
+    .popUp-menu {
+        .popup-shop {
+            width: 85vw;
+            height: auto;
+            .center {
+                display: block;
+
+                .foodImage-order {
+                    width: 150px;
+                    height: 100px;
+
+                    img {
+                        width: 150px;
+                        height: 100px;
+                    }
+                }
+
+                .foodOrderDetails{
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
     header {
         .container {
             padding: 1vw 3vw;
@@ -792,7 +873,7 @@ footer {
                 }
             }
 
-            .activeNav{
+            .activeNav {
                 left: 0;
                 transition: 0.5s;
             }
